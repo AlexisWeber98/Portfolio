@@ -6,14 +6,15 @@ const Proyects = () => {
   
   return (
     <main className={styles.container}>
-      <h2 className="title">Proyects</h2>
+      <h2 className={styles.center}>Proyects</h2>
+      <hr />
 
       <div className={styles.proyects}>
-        <div className={styles.web}>
+        <div className={styles.cards}>
           <h3 className="title">Web</h3>
           <WebProyects/>
         </div>
-        <div className={styles.movile}>
+        <div className={styles.cards}>
           <h3 className="title">Movile</h3>
           <MovileProyects />
         </div>
