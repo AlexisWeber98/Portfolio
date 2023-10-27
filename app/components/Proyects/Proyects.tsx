@@ -6,7 +6,7 @@ const Proyects = () => {
   
   return (
     <main className={styles.container}>
-      <h2 className={styles.center}>Proyects</h2>
+      <h2 className={styles.center}>Proyectos</h2>
       <hr />
 
       <div className={styles.proyects}>
@@ -15,7 +15,7 @@ const Proyects = () => {
           <WebProyects/>
         </div>
         <div className={styles.cards}>
-          <h3 className="title">Movile</h3>
+          <h3 className="title">Movil</h3>
           <MovileProyects />
         </div>
       </div>

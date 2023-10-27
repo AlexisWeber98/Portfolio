@@ -5,6 +5,10 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  text-align: center;
+}
+.main h2 {
+  padding: 1em;
 }
 
 .description {
@@ -18,32 +22,9 @@
   font-family: var(--font-mono);
 }
 
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
-
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
 }
 
 .card {
