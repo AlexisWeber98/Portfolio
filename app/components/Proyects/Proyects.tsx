@@ -12,10 +12,12 @@ const Proyects = () => {
       <div className={styles.proyects}>
         <div className={styles.cards}>
           <h3 className="title">Web</h3>
+          <hr />
           <WebProyects/>
         </div>
         <div className={styles.cards}>
           <h3 className="title">Movil</h3>
+          <hr />
           <MovileProyects />
         </div>
       </div>

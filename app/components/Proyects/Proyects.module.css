@@ -16,18 +16,13 @@
 .proyects {
   display: flex;
   justify-content: space-between;
- text-align: center;
- margin-inline: 12%;
-  
+  text-align: center;
+  margin-inline: 12%;
 }
 
-
-
-.cards{
+.cards {
   border: solid 1px grey;
   border-radius: 1em;
-
+  margin: 3em  ;
   padding: 1em;
 }
-
-
