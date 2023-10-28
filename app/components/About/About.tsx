@@ -10,11 +10,10 @@ export default function About() {
           alt="Alexis Weber"
           width={300}
           height={300}
-          style={{ borderRadius: "10px" }}
+          style={{ borderRadius: "1em"}}
         />
       </div>
       <article className={styles.article}>
-      <h2>¿Quien Soy?</h2>
       <p className={styles.description}>Soy desarrollador full stack, con gran interés en aprender cosas nuevas, curiosidad y +</p>
       </article>
       
