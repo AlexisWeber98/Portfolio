@@ -12,6 +12,7 @@ export default function Home() {
       <h1>Alexis Weber</h1>
       <h2>Soy Full Stack, Soy developer</h2>
       <div>
+        <h3 className="title">¿Quien Soy?</h3>
         <About />
       </div>
       <hr />
