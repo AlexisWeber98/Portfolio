@@ -1,6 +1,4 @@
 import styles from "./Proyects.module.css";
-import MovileProyects from "../MovileProyects/MovileProyects";
-import WebProyects from "../WebProyects/WebProyects";
 
 const Proyects = () => {
   
@@ -13,12 +11,12 @@ const Proyects = () => {
         <div className={styles.cards}>
           <h3 className="title">Web</h3>
           <hr />
-          <WebProyects/>
+          
         </div>
         <div className={styles.cards}>
           <h3 className="title">Movil</h3>
           <hr />
-          <MovileProyects />
+        
         </div>
       </div>
     </main>
