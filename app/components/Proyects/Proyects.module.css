@@ -17,7 +17,8 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin-inline: 12%;
+  align-items: center;
+
 }
 
 .cards {
