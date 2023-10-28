@@ -16,27 +16,56 @@ export default function Tecnologies() {
     "https://imgs.search.brave.com/_L-kl-i8i-UK9FO7hwiZAqQB_NchiM9Hvfx_75-lW0A/rs:fit:500:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzA5/L0NTUy1Mb2dvLTUw/MHgzMTMucG5n";
   const html =
     "https://imgs.search.brave.com/dy3YubVbx3x0XOSwG63Q47PQoqOw-oZxYt9o8oNzxhM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODQ3ZjViZGNlZjEw/MTRjMGI1ZTQ4OWMu/cG5n";
-  const images = [javascript, typescript, react, redux, vite, next, css, html];
+
+  const frontImages = [
+    javascript,
+    typescript,
+    react,
+    redux,
+    vite,
+    next,
+    css,
+    html,
+  ];
+
+  const node =
+    "https://imgs.search.brave.com/tq3hucM-dRx8cLV-5lQQ5Qy22SzDqFN1foHTH9A2ZL8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL04vbm9kZWpz/LWxvZ28tRkJFMTIy/RTM3Ny1zZWVrbG9n/by5jb20ucG5n";
+    const postgres = "https://imgs.search.brave.com/byzJLdD60rEFslvW2kG76NE_9I-3CrL3q4Z7tnwpHbY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/d29ybGR2ZWN0b3Js/b2dvLmNvbS9sb2dv/cy9wb3N0Z3Jlc3Fs/LnN2Zw.svg";
+  const express = "https://imgs.search.brave.com/9emXFY5KwXRf4dkRDSFsJyv4dEnT-NFzF3Q5DGjTdjA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzY0L0V4cHJlc3Nq/cy5wbmc";
+  const sequelize = "https://imgs.search.brave.com/Ef1ww1iFVebFdt-NTBg9oNoxTOQZtgz8e4si4YO5Rn4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/c3RhY2tzaGFyZS5p/by9zZXJ2aWNlLzMy/MTEvMzU5MTc4Ni5w/bmc";
+  const reactNative = "https://imgs.search.brave.com/FE8tu13Z7BVYDglAlxI9uEjid0AEyxihVhj-ldlttBI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/d29ybGR2ZWN0b3Js/b2dvLmNvbS9sb2dv/cy9yZWFjdC1uYXRp/dmUtMS5zdmc.svg";
+  const backImages = [node, express, postgres, sequelize, reactNative];
+
   return (
     <main>
-        <h3 className="title"> Tecnologías </h3>
-        <div>
-        {images.map((tec) => {
-        return (
-          <Image
-            src={tec}
-            alt={tec}
-            key={tec}
-            width={101}
-            height={100}
-            style={{ margin: 10, padding: 3 }}
-          />
-        );
-      })} 
-      <hr />
-      
-        </div>
-      
+      <h3 className="title"> Tecnologías </h3>
+      <div>
+        {frontImages.map((front) => {
+          return (
+            <Image
+              alt={front}
+              src={front}
+              key={front}
+              width={101}
+              height={100}
+              style={{ margin: 10, padding: 3 , backgroundSize: "cover"}}
+            />
+          );
+        })}
+        <hr />
+        {backImages.map((back) => {
+          return (
+            <Image
+              src={back}
+              alt={back}
+              key={back}
+              width={101}
+              height={100}
+              style={{ margin: 10, padding: 3,  backgroundSize: "cover"}}
+            />
+          );
+        })}
+      </div>
     </main>
   );
 }
