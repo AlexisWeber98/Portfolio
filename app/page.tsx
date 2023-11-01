@@ -5,23 +5,25 @@ import About from "@/app/components/About/About";
 import Tecnologies from "./components/Tecnologies/Tecnologies";
 
 export default function Home() {
- 
-
   return (
     <main className={styles.main}>
-      <h1>Alexis Weber</h1>
-      <h2>Soy Full Stack, Soy developer</h2>
+      <h1>
+        Alexis Weber
+        <hr />
+        <div className="code">
+        Soy Full Stack, Soy developer
+        </div>
+      </h1>
+
       <div>
-        <h3 className="title">¿Quien Soy?</h3>
         <About />
       </div>
-      <hr />
       <div>
         <Proyects />
       </div>
 
       <aside>
-        <Tecnologies/>
+        <Tecnologies />
       </aside>
     </main>
   );
