@@ -1,4 +1,4 @@
-export default function Cards () {
+export default function Cards (name:string, image:string, url:string) {
     return (
         <main>
             
